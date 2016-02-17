@@ -1,0 +1,58 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android         = "http://schemas.android.com/apk/res/android"
+    xmlns:app             = "http://schemas.android.com/apk/res-auto"
+    android:id            = "@+id/main_drawer"
+    android:layout_height = "match_parent"
+    android:layout_width  = "match_parent" >
+
+    <LinearLayout
+        android:layout_width  = "match_parent"
+        android:layout_height = "match_parent"
+        android:background    = "@color/background"
+        android:orientation   = "vertical" >
+
+        <android.support.v7.widget.Toolbar
+            android:id            = "@+id/main_toolbar"
+            android:layout_width  = "match_parent"
+            android:layout_height = "wrap_content"
+            android:background    = "@color/primary"
+            android:minHeight     = "?attr/actionBarSize"
+            android:theme         = "@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width  = "match_parent"
+            android:layout_height = "match_parent"
+            android:layout_margin = "@dimen/margin">
+
+            <com.valentinesdayapp.erkut.valentinesdayapp.SquareImageView
+                android:id            = "@+id/main_image"
+                android:layout_width  = "250dp"
+                android:layout_height = "wrap_content"
+                android:layout_centerHorizontal = "true"
+                android:layout_centerVertical   = "true"
+                android:scaleType     = "centerCrop" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id            = "@+id/main_actionbutton"
+                android:layout_height = "wrap_content"
+                android:layout_width  = "wrap_content"
+                android:layout_margin = "@dimen/margin"
+                android:scaleType     = "center"
+                app:borderWidth       = "0dp"
+                android:background    = "@color/primary"
+                android:elevation     = "@dimen/elevation"
+                android:layout_alignParentBottom = "true"
+                android:layout_alignParentRight  = "true" >
+            </android.support.design.widget.FloatingActionButton>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

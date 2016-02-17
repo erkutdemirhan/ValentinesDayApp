@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Valentines Day App</string>
+    <string name="menu_heart">Heart</string>
+    <string name="message">Happy Valentine's Day!</string>
+</resources>
